@@ -42,4 +42,9 @@ public class NPC : MonoBehaviour, IInteractable
         //return "Appuyez sur E pour parler à " + name;
 
     }
+
+    public void Read()
+    {
+
+    }
 }

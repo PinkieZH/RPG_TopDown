@@ -15,5 +15,4 @@ public class DialogueData : ScriptableObject
     [Header("Choices")]
     public string[] choices;
     public DialogueData nextDialogue;
-
 }

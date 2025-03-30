@@ -36,8 +36,6 @@ public class DialogueBubble : MonoBehaviour
     {
         isDialogueClosed = false;
         dialogueManagerInstantiated.SetActive(false);
-
-
     }
 
     private void Update()
@@ -47,6 +45,5 @@ public class DialogueBubble : MonoBehaviour
         {
             anim.SetBool("isShowing", !dialogueState);
         }
-       
     }
 }

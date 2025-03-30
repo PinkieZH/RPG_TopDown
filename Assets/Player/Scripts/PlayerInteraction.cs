@@ -31,6 +31,7 @@ public class PlayerInteraction : InputHandler
         if (playerInput != null)
         {
             playerInput.actions["Interact"].started += OnInteract;
+            playerInput.actions["Read"].started += OnRead;
         }
         else
         {
@@ -45,6 +46,7 @@ public class PlayerInteraction : InputHandler
         if (playerInput != null)
         {
             playerInput.actions["Interact"].started -= OnInteract;
+            playerInput.actions["Read"].started -= OnRead;
         }
     }
 
@@ -57,6 +59,14 @@ public class PlayerInteraction : InputHandler
         }
     }
 
+    private void OnRead(InputAction.CallbackContext context)
+    {
+        if (currentInteractable != null)
+        {
+            currentInteractable.Read();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         IInteractable interactable = other.GetComponent<IInteractable>();
@@ -65,9 +75,6 @@ public class PlayerInteraction : InputHandler
 
         if (currentInteractable != null && interactionPromptPanel != null)
         {
-            /*dialogueMark.SetActive(true);
-            anim.ResetTrigger("Hide");
-            anim.SetTrigger("Show");
             //interactionPromptPanel.SetActive(true);
             //interactionPromptText.text = currentInteractable.GetInteractionPrompt();*/
         } 
@@ -86,8 +93,6 @@ public class PlayerInteraction : InputHandler
                 interactionPromptPanel.SetActive(false);
             }
         }
-        /*anim.ResetTrigger("Show");
-        anim.SetTrigger("Hide");*/
     }
 }
 

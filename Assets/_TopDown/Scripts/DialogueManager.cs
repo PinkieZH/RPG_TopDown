@@ -2,9 +2,6 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
-using UnityEditorInternal;
-using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,10 +10,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText; //texte qui affiche nom du perso qui parle
     public TextMeshProUGUI dialogueText; //texte qui affiche le dialogue
     public GameObject continueIndicator; //indicateur visuel qui montre quon peut continuer
-    //public Animator anim;
 
-
-    [Header("Dialogue Settings")]
+    [Header("Typing Settings")]
     public float typingSpeed = 0.05f; //temps entre l'affichage de chaque caractères (en secondes)
 
     [Header("Input Settings")]
@@ -26,8 +21,7 @@ public class DialogueManager : MonoBehaviour
     public int currentLineIndex; //index de la ligne actuellement affichée
     private bool isTyping; // estce que le texte vient detre tapé?
     private Coroutine typeCoroutine; //ref à la coroutine qui affiche txt car. par car.
-    private bool isDialogueActive; //estcequ'un dialogue est actif?
-   
+    private bool isDialogueActive; //estcequ'un dialogue est actif? 
 
 
     //Singleton pattern
@@ -49,7 +43,7 @@ public class DialogueManager : MonoBehaviour
             continueIndicator.SetActive(false);
 
         //config l'action d'input pour continuer le dialogue
-        if(continueDialogueAction != null)
+        if (continueDialogueAction != null)
         {
             continueDialogueAction.action.started += OnContinueDialogueInput;
         }
@@ -183,8 +177,6 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         dialoguePanel.SetActive(false);
-        //anim.ResetTrigger("Hide");
-        //anim.SetTrigger("Show");
     }
 
     //methode publique pour verif si un dialogue est en cours
