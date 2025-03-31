@@ -31,7 +31,6 @@ public class PlayerInteraction : InputHandler
         if (playerInput != null)
         {
             playerInput.actions["Interact"].started += OnInteract;
-            playerInput.actions["Read"].started += OnRead;
         }
         else
         {
@@ -46,7 +45,6 @@ public class PlayerInteraction : InputHandler
         if (playerInput != null)
         {
             playerInput.actions["Interact"].started -= OnInteract;
-            playerInput.actions["Read"].started -= OnRead;
         }
     }
 
@@ -56,14 +54,6 @@ public class PlayerInteraction : InputHandler
         if (currentInteractable != null)
         {
             currentInteractable.Interact();
-        }
-    }
-
-    private void OnRead(InputAction.CallbackContext context)
-    {
-        if (currentInteractable != null)
-        {
-            currentInteractable.Read();
         }
     }
 

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BubbleText Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4728315531320431233, guid: 7988644a931f22d4a8b13bf64d2a617d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7899425676362541999, guid: 7988644a931f22d4a8b13bf64d2a617d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5

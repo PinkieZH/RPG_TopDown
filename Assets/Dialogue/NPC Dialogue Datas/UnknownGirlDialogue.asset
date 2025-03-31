@@ -17,3 +17,5 @@ MonoBehaviour:
   dialogueLines:
   - "... Bonjour... \xE9trang\xE8re."
   - Comment ? Non je ne connais pas de "Nakino"
+  choices: []
+  nextDialogue: {fileID: 0}

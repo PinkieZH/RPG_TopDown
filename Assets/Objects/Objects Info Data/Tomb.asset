@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e91c4581a30ebb429cf68e72cd5012b, type: 3}
   m_Name: Tomb
   m_EditorClassIdentifier: 
-  itemName: 
-  itemInfo: []
+  itemName: Tombe de ????
+  itemInfo:
+  - "Ici repose le corps et l'\xE2me de ????"
+  - "(Veuillez d\xE9poser une fleur)"

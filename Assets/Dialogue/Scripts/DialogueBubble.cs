@@ -35,7 +35,7 @@ public class DialogueBubble : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         isDialogueClosed = false;
-        dialogueManagerInstantiated.SetActive(false);
+        anim.SetBool("isShowing", false);
     }
 
     private void Update()

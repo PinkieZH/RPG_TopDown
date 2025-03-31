@@ -1,8 +1,9 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.TextCore.Text;
 
-public class BubbleText : MonoBehaviour
+public class BubbleText : Items
 {
     [Header("Références Bulles")]
     public Animator anim;
@@ -20,7 +21,7 @@ public class BubbleText : MonoBehaviour
             Quaternion.identity);
 
         newBubble.transform.SetParent(parentPosition);
-        anim = textBubble.GetComponent<Animator>();
+        anim = newBubble.GetComponent<Animator>();
         objectsManagerInstantiated = newBubble;
 
     }
@@ -35,15 +36,22 @@ public class BubbleText : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         isTextClosed = false;
-        objectsManagerInstantiated.SetActive(false);
+        anim.SetBool("isShowing", false);
+    }
+
+    public override void Interact()
+    {
+        base.Interact();
+        anim.SetBool("isShowing", false);
+        Read();
     }
 
     private void Update()
     {
-        bool textState = objectsManager.IsTextActive();
+        bool dialogueState = objectsManager.IsTextActive();
         if (isTextClosed)
         {
-            anim.SetBool("isShowing", !textState);
+            anim.SetBool("isShowing", !dialogueState);
         }
     }
 }
