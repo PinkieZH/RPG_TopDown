@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DialogueBubble : MonoBehaviour
+public class DialogueBubble : NPC
 {
     [Header("Références Bulles")]
     public Animator anim;

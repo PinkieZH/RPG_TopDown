@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7407779418141855284}
   - component: {fileID: 8268585146967150686}
   m_Layer: 0
-  m_Name: Rpourlire
+  m_Name: Epourlire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d5759ae9ee3f88140a6dadc5213760ba, type: 3}
+  m_Sprite: {fileID: -1594222016, guid: eff1619969c6dca47a9f2ac301ebad3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 31.37255, y: 6.25}
+  m_Size: {x: 35.416668, y: 8.333333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

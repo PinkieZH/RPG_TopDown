@@ -831,7 +831,6 @@ GameObject:
   m_Component:
   - component: {fileID: 112524397}
   - component: {fileID: 112524396}
-  - component: {fileID: 112524398}
   - component: {fileID: 112524394}
   - component: {fileID: 112524393}
   - component: {fileID: 112524399}
@@ -995,20 +994,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &112524398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112524392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d063be18783568a4c81b6445bf589fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: baafb2dbe6b048542ba02e851d2615a6, type: 2}
-  customName: 
 --- !u!114 &112524399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,7 +1006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2353fb13c7a5c8b4bb56789cc56db0f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  dialogueData: {fileID: 11400000, guid: baafb2dbe6b048542ba02e851d2615a6, type: 2}
+  customName: 
+  anim: {fileID: 8136156214008685059, guid: b1b086edff4123344a2625382bd8eafc, type: 3}
   dialogueBubble: {fileID: 2338396364214004100, guid: b1b086edff4123344a2625382bd8eafc, type: 3}
   dialogueManager: {fileID: 1472195526}
 --- !u!1 &134246014
@@ -3281,7 +3268,6 @@ GameObject:
   - component: {fileID: 1149908699}
   - component: {fileID: 1149908698}
   - component: {fileID: 1149908700}
-  - component: {fileID: 1149908702}
   - component: {fileID: 1149908701}
   m_Layer: 6
   m_Name: Tomb
@@ -3597,23 +3583,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7206619c687ca041a0fb56a42ddfcd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  textBubble: {fileID: 127108942556369381, guid: 6154fd8d7ea36a646a20e8d8f8e04adb, type: 3}
-  objectsManager: {fileID: 1472195527}
---- !u!114 &1149908702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149908691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfaf3b60318da914c838da4e1870f2c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: f3dcff8b992e7a0429ab686e0d585b87, type: 2}
   customName: 
+  anim: {fileID: 8985473843568493639, guid: 6154fd8d7ea36a646a20e8d8f8e04adb, type: 3}
+  textBubble: {fileID: 6871870574071772386, guid: 6154fd8d7ea36a646a20e8d8f8e04adb, type: 3}
+  objectsManager: {fileID: 1472195527}
 --- !u!1 &1292351452
 GameObject:
   m_ObjectHideFlags: 0
