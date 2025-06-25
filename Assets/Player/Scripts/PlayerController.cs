@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMoveDirection;
 
     private Vector2 moveDirection;
-    /*private bool isFacingDown = true;*/
+    /*private bool isFacingRight = true;*/
 
 
     private void Awake()
@@ -109,7 +109,5 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("LastMoveX", lastMoveDirection.x);
         anim.SetFloat("LastMoveY", lastMoveDirection.y);
     }
-
-
 }
 

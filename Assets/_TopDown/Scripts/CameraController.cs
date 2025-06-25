@@ -61,5 +61,4 @@ public class CameraController : MonoBehaviour
         this.minY = minY;
         this.maxY = maxY;
     }
-
 }
